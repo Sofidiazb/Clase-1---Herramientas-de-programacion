@@ -1,0 +1,20 @@
+﻿@page
+@model Clase1.Pages.AlumnoModel
+@{
+    var mensajeAlumno = "Pagina del alumno";
+    var listAlumnos = new List<string>();
+        listAlumnos.Add("Santiago");
+        listAlumnos.Add("Sofia");
+        listAlumnos.Add("Fernando");
+}
+
+<div class="text-center">
+    <h1 class="display-4">Alumno</h1>
+    <p>@mensajeAlumno</p>
+</div>
+<ul>
+    @foreach (var item in listAlumnos)
+    {
+        <li>@item</li>
+    }
+</ul>
